@@ -19,6 +19,6 @@ const theme = require('./routes/theme')
 const user = require('./routes/user')
 
 app.use('/api/v1', theme)
-app.use('/api/v1/auth', user)
+app.use('/api/v1', user)
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`))
